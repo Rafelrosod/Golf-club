@@ -48,6 +48,7 @@ a {
     color: white;
     text-decoration: none;
 }
+
 .section,
 .section1,
 .section2,
@@ -87,39 +88,66 @@ iframe {
     width: 100%;
     font-size: 60px;
 }
+
 .section1 {
     display: flex;
     font-size: 22px;
     align-items: center;
     justify-content: center;
 }
-.container1, .container2{
+
+.container1,
+.container2 {
     width: 560px;
-    height: 450px;  
+    height: 450px;
     margin-bottom: 60px;
 }
-#img1{
+
+#img1 {
     border-top-right-radius: 70px;
     margin-top: 60px;
 }
-.bem-vindo{
-   width: 100%;
+
+.bem-vindo {
+    width: 100%;
 }
-#img2{
+
+#img2 {
     border-bottom-left-radius: 70px;
     margin-bottom: 60px;
 }
 
 
 
-.section2{
+.section2 {
     background-color: #068061;
+    align-items: center;
+    
 }
 
-
-
-
-
+.titulo-instalacao {
+    font-size: 40px;
+    padding: 42px;
+}
+.instalacoes {
+    display: flex;
+    justify-content: center;
+}
+.campos,
+.academia,
+.restaurante,
+.shop {
+    width: 300px;
+    height: 400px;
+    border-radius: 4px;
+    padding: 5px;
+}
+.campos :hover, .academia :hover, .restaurante :hover,.shop :hover {
+    box-shadow: 0 0 2px 1px rgba(255, 255, 255, 0.5);
+}
+.text{
+    padding: 10px;
+}
 
 footer {
     height: 600px;
