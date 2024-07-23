@@ -117,12 +117,9 @@ iframe {
     margin-bottom: 60px;
 }
 
-
-
 .section2 {
     background-color: #068061;
     align-items: center;
-    
 }
 
 .titulo-instalacao {
@@ -147,6 +144,47 @@ iframe {
 }
 .text{
     padding: 10px;
+}
+
+.section3{
+    display: block;
+    margin-top: 20px; 
+    font-size: 40px;
+}
+
+.slide-controller{
+    margin: 10px;
+}
+
+.slide-controller:nth-child(1):checked ~ .slide-show .slides-list {
+    --selected-item: 0;
+    left: calc(var(--selected-item) * -100%);
+}
+.slide-controller:nth-child(2):checked ~ .slide-show .slides-list {
+    --selected-item: 1;
+    left: calc(var(--selected-item) * -100%);
+}
+.slide-controller:nth-child(3):checked ~ .slide-show .slides-list {
+    --selected-item: 2;
+    left: calc(var(--selected-item) * -100%);
+}
+
+.slide-show{
+    overflow: hidden;
+}
+.slides-list{
+    --selection-item: 0;
+    --total-itens: 3;
+    list-style: none;
+    position: relative;
+    margin: 10px 0;
+    padding: 0;
+    left: calc(var(--selection-item) * -100%);
+    width: calc(var(--total-itens) * 100%);
+    transition: left 0.4s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
 }
 
 footer {
